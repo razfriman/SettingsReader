@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingsReader", "SettingsReader\SettingsReader.csproj", "{9583E7F6-D796-4E99-9D17-1EB32DEA5733}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9583E7F6-D796-4E99-9D17-1EB32DEA5733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9583E7F6-D796-4E99-9D17-1EB32DEA5733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9583E7F6-D796-4E99-9D17-1EB32DEA5733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9583E7F6-D796-4E99-9D17-1EB32DEA5733}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

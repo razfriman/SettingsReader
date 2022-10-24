@@ -1,0 +1,24 @@
+using CUE4Parse.FileProvider;
+using CUE4Parse.MappingsProvider;
+using CUE4Parse.UE4.Assets;
+using CUE4Parse.UE4.Assets.Exports;
+using CUE4Parse.UE4.Objects.UObject;
+
+namespace SettingsReader;
+
+public sealed class EmptyPackage : AbstractUePackage
+{
+    public EmptyPackage(string name, IFileProvider? provider, TypeMappings? mappings) : base(name, provider, mappings)
+    {
+    }
+
+    public override UObject? GetExportOrNull(string name, StringComparison comparisonType = StringComparison.Ordinal) =>
+        throw new NotImplementedException();
+
+    public override ResolvedObject? ResolvePackageIndex(FPackageIndex? index) => throw new NotImplementedException();
+
+    public override FPackageFileSummary Summary { get; } = new();
+    public override FNameEntrySerialized[] NameMap { get; } = Array.Empty<FNameEntrySerialized>();
+    public override Lazy<UObject>[] ExportsLazy { get; } = Array.Empty<Lazy<UObject>>();
+    public override bool IsFullyLoaded => true;
+}
